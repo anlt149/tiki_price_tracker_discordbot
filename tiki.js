@@ -6,7 +6,7 @@ const cheerio = require('cheerio');
 
 client.on('ready', () => {
     console.log(`Discord Logged in as ${client.user.tag}!`);
-    cron.schedule("*/15 * * * * *", function () {
+    cron.schedule("*/7200 * * * * *", function () {
         console.log("---------------------");
         console.log("Running Cron Job");
 
