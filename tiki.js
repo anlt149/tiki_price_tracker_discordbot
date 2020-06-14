@@ -6,13 +6,12 @@ const cheerio = require('cheerio');
 
 client.on('ready', () => {
     console.log(`Discord Logged in as ${client.user.tag}!`);
-    cron.schedule("*/7200 * * * * *", function () {
+    cron.schedule("*/15 * * * * *", function () {
         console.log("---------------------");
         console.log("Running Cron Job");
 
 
         const url = 'https://tiki.vn/den-led-hau-xe-dap-tron-voi-5-che-do-canh-bao-an-toan-dap-xe-ban-dem-mai-lee-hang-chinh-hang-p20576742.html?spid=20576743&src=home-deal-hot';
-
 
         let options = {
             url: url,
@@ -37,7 +36,6 @@ client.on('ready', () => {
                     pImage: img,
                     pSeller: seller
                 }
-                console.log(product)
 
                 let image = product.pImage || "https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg"
                 client.channels
@@ -45,12 +43,9 @@ client.on('ready', () => {
                     \n**${product.pName}**
                     \n***${product.pPrice}***
                     \n*${product.pSeller}
-            `, {
+                    `, {
                         files: [`${image}?file=file.png`]
-                    }).then(console.log('promise done')).catch(err => {
-                        console.log(`Send to discord err: ${err.message}`)
-                        return callback()
-                    })
+                    }).then(console.log('promise done'));
             }
             return;
         });
@@ -63,4 +58,4 @@ client.on('message', msg => {
     }
 });
 
-client.login('NzE5MTE2MDM2NzA3ODQ0MTM2.XtyvLg.JWONOdGZQOzbkol1-o6FoPQNlMc');
+client.login('NzE5MTE2MDM2NzA3ODQ0MTM2.XuXDfg.xnTX1tJhn44WKjLynwOuYScAFrk');
