@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node tiki.js"
+    "start": "node masterbot.js"
   },
   "author": "",
   "license": "ISC",
@@ -15,9 +15,11 @@
     "cheerio": "^1.0.0-rc.2",
     "cron": "^1.6.0",
     "discord.js": "^11.4.2",
+    "lodash": "^4.17.15",
     "node-cache": "^4.2.0",
     "node-cron": "^2.0.3",
-    "request": "^2.88.0"
+    "request": "^2.88.0",
+    "sqlite3": "^4.2.0"
   },
   "devDependencies": {},
   "engines": {
