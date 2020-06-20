@@ -98,7 +98,7 @@ client.on('ready', () => {
                 .send(`=============================================================
                       \n**${productItem.pName}**
                       \n***${productItem.pPrice}***
-                      \n**${productItem.pLink}**
+                      \n**<${productItem.pLink}>**
                       \n**${productItem.pSeller}**
                       `, {
                   files: [`${image}?file=file.png`]
