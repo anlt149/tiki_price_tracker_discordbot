@@ -1,6 +1,6 @@
-const BOT_TOKEN = 'YOUR TOKEN HERE';
-const CHANNEL_ID = 'YOUR CHANNEL ID HERE';
-const SCHEDULE_TIME = "*/15 * * * * *";
+const BOT_TOKEN = 'NzE5MTE2MDM2NzA3ODQ0MTM2.Xu2cvw.2-yD4eNucR8vSFhGpWdpkJ01DmA';
+const CHANNEL_ID = '719114527643402252';
+const SCHEDULE_TIME = "*/3600 * * * * *";
 
 module.exports = {
     BOT_TOKEN,
