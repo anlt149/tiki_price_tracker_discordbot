@@ -1,5 +1,6 @@
-const BOT_TOKEN = 'NzE5MTE2MDM2NzA3ODQ0MTM2.Xu2cvw.2-yD4eNucR8vSFhGpWdpkJ01DmA';
-const CHANNEL_ID = '719114527643402252';
+const BOT_TOKEN = 'YOUR BOT TOKEN';
+const CHANNEL_ID = 'YOUR CHANNEL ID';
+
 
 /**
  * “At minute 1 past every 2nd hour from 0 through 23 on every day-of-week from Monday through Sunday.”
