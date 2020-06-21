@@ -4,7 +4,7 @@ const CHANNEL_ID = '719114527643402252';
 /**
  * “At minute 1 past every 2nd hour from 0 through 23 on every day-of-week from Monday through Sunday.”
  */
-const SCHEDULE_TIME = "1 0-23/2 * * 1-7";
+const SCHEDULE_TIME = "*/60 * * * *";
 
 module.exports = {
     BOT_TOKEN,
